@@ -8,5 +8,6 @@ The file "BisymDataSorted4to500.csv" contains all factorizations of such matrice
 ```math
 \begin{pmatrix}x &y\\y &x\end{pmatrix} = \begin{pmatrix} a& b\\ b&a\end{pmatrix} \begin{pmatrix} c & d\\d&c\end{pmatrix}
 ```
+Rows are sorted in ascending order by x, y values. Only matrices with x<y are stored, although there will be multiple versions of the same factorization, since associates of the factors or commuted matrices are also stored. 
 
 The previous code, BisymFactByMin.py, has been deleted, as it searches all factors, including non-bisymmetric. The previous data file, BisymmetricData.csv contained only factorizations of bisymmetric matrices with minimum value up to 100.
